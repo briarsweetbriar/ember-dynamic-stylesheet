@@ -1,26 +1,32 @@
-# Dynamic-rulesheet
+# ember-dynamic-stylesheet
 
-This README outlines the details of collaborating on this Ember addon.
+Dynamically alter an Ember.js stylesheet. Let's you:
+
+* Add and remove classes
+* Manage dynamic keyframes
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`ember install ember-dynamic-stylesheet`
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+First, inject `ember-dynamic-stylesheet`:
 
-## Running Tests
+```js
+export default Ember.Component.extend({
+  dynamicStylesheet: Ember.inject.service()
+});
+```
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+Then use `insertRule` to insert rules:
 
-## Building
+```js
+this.get('dynamicStylesheet').insertRule('.foo { color: red; }');
+```
 
-* `ember build`
+And `deleteRule` to delete them:
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+```js
+this.get('dynamicStylesheet').deleteRule('.foo { color: red; }');
+```

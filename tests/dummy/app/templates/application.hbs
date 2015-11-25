@@ -1,3 +1,9 @@
-<h2 id="title">Welcome to Ember</h2>
+<span class="foo">foo</span>
+<span class="bar">bar</span>
+<span class="baz">baz</span>
 
-{{outlet}}
+<form>
+  {{textarea value=rule id="textarea"}}
+  <button {{action "addStyle"}} id="addButton">Add Style</button>
+  <button {{action "removeStyle"}} id="removeButton">Remove Style</button>
+</form>

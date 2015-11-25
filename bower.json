@@ -1,5 +1,5 @@
 {
-  "name": "dynamic-rulesheet",
+  "name": "ember-dynamic-stylesheet",
   "dependencies": {
     "ember": "1.13.10",
     "ember-cli-shims": "0.0.6",

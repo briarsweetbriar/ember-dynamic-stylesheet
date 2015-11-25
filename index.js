@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'dynamic-rulesheet'
+  name: 'ember-dynamic-stylesheet'
 };
