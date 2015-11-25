@@ -1,6 +1,6 @@
 {
   "name": "ember-dynamic-stylesheet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dynamically alter an Ember.js stylesheet.",
   "directories": {
     "doc": "doc",
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/null-null-null/ember-dynamic-stylesheet",
   "engines": {
     "node": ">= 0.10.0"
   },
